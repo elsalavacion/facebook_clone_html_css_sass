@@ -323,6 +323,9 @@ a {
       cursor: pointer; }
       .signup-form #submit input:hover {
         background: #104e03; }
+  .signup-form-recaptcha {
+    width: 95%;
+    margin: 10px auto; }
 
 #label:checked ~ .signup {
   display: block;
