@@ -54,6 +54,87 @@
     </div>
   </section>
 
+   <!-- sign up -->
+   <input type="checkbox" id="label">
+   <section class="signup">
+     <div class="signup-heading">
+       <div class="signup-heading-left">
+         <h1>Sign Up</h1>
+         <p>It's quick and easy.</p>
+       </div>
+       <div class="signup-heading-right">
+         <label for="label"><i class="fas fa-times"></i></label>
+       </div>
+     </div>
+     <hr>
+     <div class="signup-form">
+       <form name="Signup" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="signup-form-name">
+         <input type="text" placeholder="First Name" id="fname" name="First Name">
+         <input type="text" placeholder="Last Name" id="lname" name="Last Name">
+        </div>
+         <input type="text" placeholder="Mobile Number or email address" id="email" name="Email">
+         <input type="password" id="password" placeholder="New Password" name="Password">
+ 
+         <label class="dob-label">Date of birth <span><i class="fas fa-question-circle"></i></span></label>
+         <div class="signup-form-dob">
+ 
+           <!-- date -->
+           <select id="day" name="Day">
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">1</option>
+             <option value="6">1</option>
+             <option value="31">1</option>
+           </select>
+ 
+           <!-- month -->
+           <select id="month" name="Month">
+             <option value="january">January</option>
+             <option value="febuary">Febuary</option>
+             <option value="march">March</option>
+             <option value="April">April</option>
+             <option value="may">May</option>
+             <option value="june">June</option>
+             <option value="july">July</option>
+           </select>
+ 
+           <!-- year -->
+           <select id="year" name="Year">
+             <option value="1999">1999</option>
+             <option value="2000">2000</option>
+             <option value="2001">2001</option>
+             <option value="2002">2002</option>
+             <option value="2003">2003</option>
+             <option value="2004">2004</option>
+             <option value="2005">2005</option>
+           </select>
+         </div>
+ 
+         <label class="gender-label">Gender <span><i class="fas fa-question-circle"></i></span></label>
+         <div class="signup-form-gender">
+           <div class="signup-form-gender-female">
+             <label for="female">Female</label>
+             <input type="radio" id="female" name="Gender" value="Female">
+           </div>
+           <div class="signup-form-gender-male">
+             <label for="male">Male</label>
+             <input type="radio" id="male" value="Male" name="Gender">
+           </div>
+         </div>
+         <div class="signup-form-motto">
+           By clicking Sign Up, you agree to our Terms, <span><a href="#">Data Policy</a></span> and <span><a href="#">Cookie Policy</a></span>. You may receive SMS notifications from us and can opt out at any time.
+         </div>
+         <div data-netlify-recaptcha="true"></div>
+         <div id="submit">
+           <input type="submit" value="Sign Up">
+         </div>
+       </form>
+     </div>
+   </section>
+
   <footer class="footer">
     <div class="footer-lang">
       <span>English(US)</span>
@@ -275,87 +356,6 @@
       Facebook &copy;2020
     </div>
   </footer>
-
-  <!-- sign up -->
-  <input type="checkbox" id="label">
-  <section class="signup">
-    <div class="signup-heading">
-      <div class="signup-heading-left">
-        <h1>Sign Up</h1>
-        <p>It's quick and easy.</p>
-      </div>
-      <div class="signup-heading-right">
-        <label for="label"><i class="fas fa-times"></i></label>
-      </div>
-    </div>
-    <hr>
-    <div class="signup-form">
-      <form name="Signup" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-       <div class="signup-form-name">
-        <input type="text" placeholder="First Name" id="fname" name="First Name">
-        <input type="text" placeholder="Last Name" id="lname" name="Last Name">
-       </div>
-        <input type="text" placeholder="Mobile Number or email address" id="email" name="Email">
-        <input type="password" id="password" placeholder="New Password" name="Password">
-
-        <label class="dob-label">Date of birth <span><i class="fas fa-question-circle"></i></span></label>
-        <div class="signup-form-dob">
-
-          <!-- date -->
-          <select id="day" name="Day">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">1</option>
-            <option value="6">1</option>
-            <option value="31">1</option>
-          </select>
-
-          <!-- month -->
-          <select id="month" name="Month">
-            <option value="january">January</option>
-            <option value="febuary">Febuary</option>
-            <option value="march">March</option>
-            <option value="April">April</option>
-            <option value="may">May</option>
-            <option value="june">June</option>
-            <option value="july">July</option>
-          </select>
-
-          <!-- year -->
-          <select id="year" name="Year">
-            <option value="1999">1999</option>
-            <option value="2000">2000</option>
-            <option value="2001">2001</option>
-            <option value="2002">2002</option>
-            <option value="2003">2003</option>
-            <option value="2004">2004</option>
-            <option value="2005">2005</option>
-          </select>
-        </div>
-
-        <label class="gender-label">Gender <span><i class="fas fa-question-circle"></i></span></label>
-        <div class="signup-form-gender">
-          <div class="signup-form-gender-female">
-            <label for="female">Female</label>
-            <input type="radio" id="female" name="Gender" value="Female">
-          </div>
-          <div class="signup-form-gender-male">
-            <label for="male">Male</label>
-            <input type="radio" id="male" value="Male" name="Gender">
-          </div>
-        </div>
-        <div class="signup-form-motto">
-          By clicking Sign Up, you agree to our Terms, <span><a href="#">Data Policy</a></span> and <span><a href="#">Cookie Policy</a></span>. You may receive SMS notifications from us and can opt out at any time.
-        </div>
-        <div data-netlify-recaptcha="true"></div>
-        <div id="submit">
-          <input type="submit" value="Sign Up">
-        </div>
-      </form>
-    </div>
-  </section>
 </body>
 
 </html>
