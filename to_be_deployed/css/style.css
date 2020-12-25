@@ -334,7 +334,8 @@ a {
     .home-left {
       width: 100%; }
       .home-left-heading img {
-        height: fit-content; }
+        height: fit-content;
+        width: 100%; }
       .home-left-motto {
         text-align: center; }
     .home-right {
