@@ -331,8 +331,14 @@ a {
 @media (max-width: 900px) {
   .home {
     flex-direction: column; }
-    .home-left-motto {
-      text-align: center; }
+    .home-left {
+      width: 100%; }
+      .home-left-heading img {
+        height: fit-content; }
+      .home-left-motto {
+        text-align: center; }
+    .home-right {
+      width: 100%; }
   .nav {
     flex-direction: column; }
   .signup {

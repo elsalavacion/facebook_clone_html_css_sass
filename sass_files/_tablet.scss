@@ -8,11 +8,26 @@
     // left 
     &-left 
     {
+      width: 100%;
+        // heading 
+        &-heading 
+        {
+          img 
+          {
+            height: fit-content;
+          }
+        }
       // motto 
       &-motto 
       {
         text-align: center;
       }
+    }
+
+    // right
+    &-right 
+    {
+      width: 100%;
     }
 
   }
