@@ -351,6 +351,8 @@ a {
   .nav {
     flex-direction: column;
     padding: 20px; }
+  .find {
+    height: fit-content; }
   .signup {
     width: 90%;
     margin: auto; }
