@@ -1,0 +1,208 @@
+#label 
+{
+  display: none;
+}
+
+.signup 
+{
+  display: none;
+width: 500px;
+margin: auto;
+border: 1px solid #edf0f5;
+box-shadow: 5px 5px 25px lightgray;
+background: white;
+
+// heading
+&-heading
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+
+  // left
+  &-left 
+  {
+    h1 
+    {
+      font-size: 38px;
+    }
+    p 
+    {
+      font-size: 18px;
+      font-family: $motto-font;
+    }
+  }
+
+  // right
+  &-right 
+  {
+    i 
+    {
+      font-size: 42px;
+    }
+  }
+}
+
+hr 
+{
+  margin-bottom: 15px;
+
+}
+
+&-form 
+{
+  form 
+  {
+    width: 100%;
+    margin: auto;
+
+    input 
+    {
+      height: 40px;
+      background: #edf0f5;
+      border: 2px solid lightgray;
+      padding: 5px 10px;
+      font-size: 18px;
+      margin: 10px auto;
+      color: #858282;
+      border-radius: 5px;
+    }
+
+    #email 
+    {
+      width: 95%;
+      display: block;
+    }
+
+    #password 
+    {
+      width: 95%;
+      display: block;
+    }
+  }
+
+  // name
+  &-name 
+  {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+    #fname, #lname
+    {
+      width: 48%;
+    }
+  }
+
+  .dob-label, .gender-label 
+  {
+    display: block;
+    color: #858282;
+    padding-bottom: 3px;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 14px;
+    
+  }
+  // dob 
+  &-dob{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    select 
+    {
+      width: 32%;
+      height: 30px;
+      font-size: 18px;
+      border: 1px solid lightgray;
+    }
+    #month 
+    {
+      margin-left: 5px;
+    }
+    #year 
+    {
+      margin-left: 5px;
+    }
+  }
+
+  .gender-label 
+  {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  // gender
+  &-gender 
+  {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    height: 30px;
+    div 
+    {
+      display: flex;
+      align-items: center;
+      border: 1px solid black;
+      padding: 0 20px;
+      margin-right: 20px;
+      label 
+      {
+        padding-right: 20px;
+      }
+     
+    }
+  }
+  &-motto 
+  {
+    font-size: 12px;
+    width: 95%;
+    margin: 10px auto;
+    a{
+      color: blue;
+    }
+
+  }
+
+  // submit
+  #submit 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: 10px auto;
+
+    input 
+    {
+      padding: 0px 45px;
+        background: #42b72a;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+
+        &:hover
+        {
+        background: #104e03;
+        }
+    }
+  }
+}
+}
+
+// label is checked
+#label:checked ~ .signup 
+{
+  display: block;
+  z-index: 2;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  
+}

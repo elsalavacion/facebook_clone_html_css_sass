@@ -1,0 +1,44 @@
+@media(max-width: 900px)
+{
+  // home 
+  .home 
+  {
+    flex-direction: column;
+
+    // left 
+    &-left 
+    {
+      // motto 
+      &-motto 
+      {
+        text-align: center;
+      }
+    }
+
+  }
+
+  // nav
+  .nav 
+  {
+    flex-direction: column;
+  }
+
+  
+  // signup
+  .signup 
+  {
+    width: 90%;
+    margin: auto;
+  }
+
+  #label:checked ~ .signup 
+{
+  display: block;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%);
+  
+}
+}

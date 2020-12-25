@@ -1,0 +1,77 @@
+.find {
+  height: 60vh;
+  background: #edf0f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // container
+  &-container {
+    background-color: white;
+    border: none;
+
+    &-heading {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px;
+      padding-bottom: 10px;
+    }
+
+    // center
+    &-center {
+      width: 90%;
+      margin: auto;
+      font-size: 14px;
+      padding: 30px;
+
+      input {
+        width: 75%;
+        margin: 15px 0;
+        line-height: 20px;
+        border-color: #edf0f5;
+      }
+    }
+
+    hr
+    {
+      margin: 0 10px;
+    }
+    // bottom
+    &-bottom {
+      border-top: 1px solid #edf0f5;
+      background: darkgray;
+      padding: 0 15px;
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      span 
+      {
+        padding: 0 10px;
+      }
+
+      // search
+      &-search 
+      {
+       a 
+       {
+        background: #3b5998;
+        color: white;
+        padding: 5px 10px;
+       }
+      }
+
+        // cancel
+        &-cancel 
+        {
+         a 
+         {
+          background: lightgray;
+          padding: 5px 10px;
+         }
+        }
+    }
+  }
+}

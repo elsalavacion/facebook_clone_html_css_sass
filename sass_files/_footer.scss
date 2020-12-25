@@ -1,0 +1,46 @@
+.footer {
+  padding: 15px 25px;
+  font-size: 13px;
+  color: #022874;
+
+  span {
+    padding: 10px 3px;
+    line-height: 25px;
+  }
+  a {
+    color: #022874;
+  }
+
+  &-lang {
+    padding: 10px 0;
+
+    span {
+      margin: 10px 0;
+      &:last-child {
+        a {
+          padding: 5px 10px;
+          background-color: lightgray;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+
+  hr {
+    color: #edf0f5;
+    opacity: 0.5;
+  }
+  // details
+  &-details {
+    padding-right: 15px;
+  }
+
+  // motto
+  &-motto 
+  {
+    color: black;
+    margin: 10px 0;
+    font-size: 12px;
+    font-family: $motto-font;
+  }
+}

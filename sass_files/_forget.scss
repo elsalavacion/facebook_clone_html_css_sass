@@ -1,0 +1,75 @@
+
+
+// nav 
+.nav 
+{
+  display: flex;
+  padding: 20px 150px;
+  justify-content: space-between;
+  align-items: center;
+  background: #3b5998;
+  color: white;
+
+  a 
+  {
+    color: white;
+  }
+
+
+  // brand
+  &-brand 
+  {
+  font-family: $heading-font;
+  font-weight: bolder;
+  font-size: 42px;
+  }
+
+  // form
+  &-form
+  {
+    display: flex;
+   font-size: 14px;
+    label 
+    {
+      display: block;
+    }
+
+    input 
+    {
+      width: 150px;
+      margin: 5px 5px 5px 0;
+      border: none;
+      line-height: 25px;
+      &[type="submit"]
+      {
+        width: fit-content;
+        padding: 0 5px;
+        color: white;
+        background: #446ec7;
+        cursor: pointer;
+      }
+    }
+
+    &-password 
+    {
+      a 
+      {
+        display: block;
+        color: darkgray;
+
+        &:hover
+        {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  // right
+  &-right
+  {
+    &-forget 
+    {
+      text-align: right;
+    }
+  }
+}
