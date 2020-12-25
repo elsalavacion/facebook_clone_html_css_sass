@@ -334,7 +334,8 @@ a {
 
 @media (max-width: 900px) {
   .home {
-    flex-direction: column; }
+    flex-direction: column;
+    height: fit-content; }
     .home-left {
       width: 100%; }
       .home-left-heading img {
