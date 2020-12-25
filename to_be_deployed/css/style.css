@@ -340,7 +340,8 @@ a {
     .home-right {
       width: 100%; }
   .nav {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 20px; }
   .signup {
     width: 90%;
     margin: auto; }
