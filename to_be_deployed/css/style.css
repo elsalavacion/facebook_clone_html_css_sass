@@ -352,7 +352,8 @@ a {
     flex-direction: column;
     padding: 20px; }
   .find {
-    height: fit-content; }
+    height: fit-content;
+    padding: 50px 0; }
   .signup {
     width: 90%;
     margin: auto; }
